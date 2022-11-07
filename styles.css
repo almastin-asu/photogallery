@@ -1,29 +1,44 @@
 html {
     font-family: arial;
+    background-color: black;
   }
-  body {
+body {
     width: 1310px;
-  }
-  h1 {
+    background-color: white;
+}
+h1 {
     font-size: 40px;
   }
-  main h1 {
+main h1 {
     color: #000000;
   }
-  header h1 {
+header h1 {
     color: #007D7B
   }
-  nav {
+nav {
     font-size: 20px;
     color: #FFFFFF;
   }
-  p {
+nav a {
+    float: right;
+    
+}
+p {
     font-size: 20px;
   }
-  figcaption {
+figcaption {
     font-size: 16px;
   }
-  footer {
+footer {
     font-size: 16px;
     color: #FFFFFF;
   }
+#top {
+    font-size: 16px;
+    background-color: #007D7B;
+    color: #FFFFFF;
+}
+#top:hover {
+    background-color: #FFFFFF;
+    color: #007D7B;
+}
