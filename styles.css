@@ -37,8 +37,14 @@ footer {
     font-size: 16px;
     background-color: #007D7B;
     color: #FFFFFF;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
 #top:hover {
     background-color: #FFFFFF;
     color: #007D7B;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
