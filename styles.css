@@ -1,0 +1,50 @@
+html {
+    font-family: arial;
+    background-color: black;
+  }
+body {
+    width: 1310px;
+    background-color: white;
+}
+h1 {
+    font-size: 40px;
+  }
+main h1 {
+    color: #000000;
+  }
+header h1 {
+    color: #007D7B
+  }
+nav {
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+nav a {
+    float: right;
+    text-align: center;
+}
+p {
+    font-size: 20px;
+  }
+figcaption {
+    font-size: 16px;
+  }
+footer {
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+#top {
+    font-size: 16px;
+    background-color: #007D7B;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+#top:hover {
+    background-color: #FFFFFF;
+    color: #007D7B;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
