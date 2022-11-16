@@ -26,9 +26,7 @@ li {
 p {
     font-size: 20px;
   }
-.row {
-  display: flex;
-  flex-wrap: wrap;
+td {
   padding: 5px;
 }
 figcaption {
