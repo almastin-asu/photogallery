@@ -21,7 +21,9 @@ nav {
   }
 nav a {
     float: right;
-    
+}
+li {
+  display: inline;
 }
 p {
     font-size: 20px;
