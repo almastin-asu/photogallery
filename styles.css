@@ -1,0 +1,199 @@
+/* basic styles */
+html {
+    background-color: black;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    min-width: 485px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main, header {
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+p {
+    font-size: 1em;
+    padding-left: 10px;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+small {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+h3 {
+    visibility: hidden;
+    height: 1px;
+}
+h1 {
+    font-size: 2.5em;
+    color: #007d7b;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+h2 {
+    font-size: 1.75em;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* navigation */
+nav ul {
+    list-style: none;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+nav a {
+    font-size: 1.25em;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+[href="#top"] {
+    position: fixed;
+    color: black;
+    bottom:0px;
+    right:0px;
+}
+
+/* gallery */
+.photos {
+    display: grid;
+    padding: 20px;
+    grid-gap: 10px;
+}
+.photos img {
+    width: 100%;
+    height: auto;
+}
+figure {
+    position: relative;
+}
+figcaption {
+    font-size: .80em;
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    bottom: 0;
+    padding-bottom: 10px;
+    left: 50%;
+    transform: translate(-50%)
+}
+.guatemala figcaption, .iran figcaption, .ireland figcaption, .rocky-mountains figcaption, .switzerland figcaption, .uk figcaption, .usa figcaption, .wyoming figcaption {
+    top: 0;
+    padding-top: 10px;
+}
+.iran figcaption, .ireland figcaption, .italy figcaption, .rocky-mountains figcaption, .switzerland figcaption, .uk figcaption, .usa figcaption {
+    color: black;
+}
+
+/* contact */
+.contact h2, .contact p {
+    color: white;
+    text-align: center;
+}
+.contact {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+form {
+    text-align: center;
+}
+input {
+    font-size: .80em;
+    text-transform: uppercase;
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+input::placeholder {
+    color:#007d7b;
+    font-weight: bolder;
+}
+label {
+    text-transform: uppercase;
+    font-size: .80em;
+    color: white;
+    text-align: left;
+    display: block;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+button {
+    background-color:#007d7b;
+    color: white;
+    padding: 10px 90px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    border: none;
+}
+
+/* footer */
+footer {
+    color: white;
+    text-transform: uppercase;
+    text-align:center;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+@media screen and (min-width: 880px) {
+    h1 {
+        font-size: 3em;
+        text-align: left;
+    }
+    p {
+        font-size: 1.25em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    nav a {
+        font-size: 1.5em;
+    }
+    figcaption, label, input {
+        font-size: 1em;
+    }
+    label {
+        padding-left: 6%;
+    }
+
+    /* gallery */
+    .photos {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hawaii figcaption {
+        bottom: 55%;
+    }
+    .rocky-mountains figcaption {
+        left: 30%;
+        transform: translate(-20%);
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    nav ul {
+        justify-content: right;
+    }
+    /* gallery */
+    .photos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .hawaii figcaption {
+        bottom: 0;
+    }
+}
